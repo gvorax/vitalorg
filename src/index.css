@@ -455,6 +455,9 @@ html {
 
 /* small screen  */
 @media screen and (max-width: 576px) {
+  .about{
+    margin-top: 200px;
+  }
   .shop .swiper-slide h5{
     line-height: 50px;
   }

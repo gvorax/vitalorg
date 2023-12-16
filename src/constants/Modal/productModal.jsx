@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./ProductModal.scss";
+import "./productModal.scss";
 import { ToastContainer, toast } from "react-toastify";
 import axios from "axios";
 import { useContext } from "react";

@@ -81,8 +81,8 @@ html {
     font-size: 14px;
   }
   .navbar .nav_item .nav_lan .search_box .search_place {
-
-padding: 20px;  }
+    padding: 20px;
+  }
 
   .main .main_content h1 {
     font-size: 64px;
@@ -123,9 +123,6 @@ padding: 20px;  }
   .shop .swiper-slide button {
     padding: 15px 50px;
     font-size: 20px;
-  }
-  .delivery .del_box {
-    width: 80%;
   }
   .delivery .del_box .del_img .bot_box .del_people {
     width: 300px;
@@ -454,13 +451,13 @@ padding: 20px;  }
 
 /* small screen  */
 @media screen and (max-width: 576px) {
-  .search_place{
+  .search_place {
     right: -100px !important;
   }
-  .about{
+  .about {
     margin-top: 100px;
   }
-  .shop .swiper-slide h5{
+  .shop .swiper-slide h5 {
     line-height: 50px;
   }
   .sider-nav .sider-ul li a {
@@ -478,7 +475,6 @@ padding: 20px;  }
     width: 100% !important;
     padding: 0 auto !important;
     margin: 0;
-    
   }
   .shop .swiper-slide img {
     height: 200px;

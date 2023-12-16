@@ -44,8 +44,8 @@ i18n.use(initReactI18next).init({
         confirmedTextb: `Mijozlarimiz sog’liqlarini o’ylaymiz! Suvimiz tarkibidagi keraksiz mikroelementlardan tozalash jarayonlarini`,
         confirmedTextb1: `yapon va xitoy texnologiyalarida va albatta to’liq avtomatlashtirilgan texnikalarda bajaramiz.`,
         confirmedTextc: `Ishlab chiqarish va qadoqlash jarayonlari to'la
-        avtomatlashtirilgan va`,
-        confirmedTextc1: ` har qanday inson aralashuvidan himoyalangan`,
+        avtomatlashtirilgan`,
+        confirmedTextc1: ` va har qanday inson aralashuvidan himoyalangan`,
         confirmedTextd: `Bizning suv kapsulalarimiz 15 bosqichli tozalash jarayonidan
         o‘tadi `,
         confirmedTextd1: `va mijozlarga toza holatda yetkazildi.`,

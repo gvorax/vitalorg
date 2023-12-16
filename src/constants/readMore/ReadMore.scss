@@ -14,6 +14,12 @@
     margin: 0 0 20px;
     text-align: justify; /* Add margin between paragraphs */
   }
+
+  .box_item{
+    .text p{
+      margin: 0 !important;
+    }
+  }
   
   .show-full-text {
     max-height: 1000px; /* Adjust to a large enough value */

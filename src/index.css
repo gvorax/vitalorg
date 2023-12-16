@@ -458,7 +458,8 @@ html {
     display: none;
   }
   .search_place {
-    right: -100px !important;
+    width: 250px !important;
+    right: -70px !important;
   }
   .about {
     margin-top: 100px;

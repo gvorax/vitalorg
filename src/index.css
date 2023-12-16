@@ -300,6 +300,9 @@ html {
 
 /* medium screen  */
 @media screen and (max-width: 768px) {
+  .block{
+    display: none;
+  }
   .contact {
     margin-top: 0 !important;
   }
@@ -451,6 +454,9 @@ html {
 
 /* small screen  */
 @media screen and (max-width: 576px) {
+  .block{
+    display: none;
+  }
   .search_place {
     right: -100px !important;
   }

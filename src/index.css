@@ -75,15 +75,14 @@ html {
     font-size: 14px;
   }
   .navbar .nav_item .nav_lan .search_box .search_place .search_input {
-    height: 30px;
     padding: 20px;
   }
   .navbar .nav_item .nav_lan .search_box .search_place .search_input input {
     font-size: 14px;
   }
   .navbar .nav_item .nav_lan .search_box .search_place {
-    height: 100px;
-  }
+
+padding: 20px;  }
 
   .main .main_content h1 {
     font-size: 64px;
@@ -578,6 +577,7 @@ html {
 
   .video .video_box .video_water {
     flex-direction: column;
+    align-items: center;
     gap: 20px;
   }
 

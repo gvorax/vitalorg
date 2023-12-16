@@ -17,10 +17,22 @@ import account from "../../assets/account.png";
 import hamburger from "../../assets/Component 65 (1).png";
 
 import { Drawer } from "antd";
+import axios from "axios";
+import { useEffect } from "react";
+import { useContext } from "react";
+import { ProductContext } from "../../context/context";
+import ProductModal from "../../constants/Modal/productModal";
 
-const Navbar = () => {
+const Navbar = ({setModal}) => {
+  const [info, setInfo] = useState(false)
+  const [searchQuery, setSearchQuery] = useState("");
+  const [filteredItems, setFilteredItems] = useState([]);
+  const [product, setProduct] = useState([])
   const { t, i18n } = useTranslation();
   const [open, setOpen] = useState(false);
+  const {setPro_id} = useContext(ProductContext)
+  const [disable, setDisable] = useState(false)
+  const [disable1, setDisable1] = useState(false)
   const showDrawer = () => {
     setOpen(true);
   };
@@ -33,6 +45,41 @@ const Navbar = () => {
     localStorage.setItem("language", lng);
     // location.reload();
   };
+
+  const getOrders = async () => {
+    const res = await axios.get("https://vital.zirapcha.uz/api/product/all");
+    let data = Object.assign(res.data.data.products);
+
+    await setProduct(data);
+    // setLoading(false);
+  };
+
+  useEffect(()=>{
+    getOrders()
+  },[])
+
+
+  const handleSearch = (query) => {
+    const filtered =
+      query === ''
+        ? product
+        : product.filter((item) =>
+            item.name.toLowerCase().includes(query.toLowerCase())
+          );
+    setFilteredItems(filtered);
+  };
+
+  const handleChange = (e) => {
+    const query = e.target.value;
+    setSearchQuery(query);
+    handleSearch(query);
+  };
+
+  const handleClick = (item)=>{
+    setPro_id(item._id)
+    // setModal(true)
+    setInfo(true)
+  }
 
   return (
     <React.Fragment>
@@ -136,7 +183,7 @@ const Navbar = () => {
               </nav>
               <div className="nav_lan" data-aos="fade-left">
                 <div className="search_box">
-                  <div className="search">
+                  <div className={`search`} onClick={()=>setDisable(!disable)}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -152,9 +199,14 @@ const Navbar = () => {
                       />
                     </svg>
                   </div>
-                  <div className="search_place">
+                  <div className={`${disable ? `block`: ``} search_place`} >
                     <div className="search_input">
-                      <input type="text" placeholder="Search" />
+                      <input
+                        type="text"
+                        placeholder="Search"
+                        value={searchQuery}
+                        onChange={handleChange}
+                      />
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -170,12 +222,19 @@ const Navbar = () => {
                         />
                       </svg>
                     </div>
+                    {/* <div className="result_item">
+                      <ul>
+                        {filteredItems.map((item) => (
+                          <li onClick={()=>handleClick(item)} key={item.id}>{item.name}</li>
+                        ))}
+                      </ul>
+                    </div> */}
                   </div>
                 </div>
 
                 {/* dropdown for language button  */}
                 <div className="dropdown">
-                  <div className="lan">
+                  <div className="lan" onClick={()=>setDisable1(!disable1)}>
                     <svg
                       width="27"
                       height="27"
@@ -189,7 +248,7 @@ const Navbar = () => {
                       />
                     </svg>
                   </div>
-                  <div className="dropdown-content">
+                  <div className={`${disable1 ? `block`: ``} dropdown-content`}>
                     <div className="flag">
                       <img src={English} alt="" />
                       <a
@@ -233,6 +292,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      {info && <ProductModal setModal={setModal} setInfo={setInfo}/>}
     </React.Fragment>
   );
 };

@@ -34,7 +34,7 @@ const Main = ({ setModal, setModal1 }) => {
         ></iframe> */}
         
       </div>
-      <Navbar />
+      <Navbar setModal={setModal}/>
       <div className="main_content">
         <div className="container">
           <div className="main_content-text" data-aos="fade-down">

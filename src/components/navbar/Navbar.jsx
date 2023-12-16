@@ -156,7 +156,7 @@ const Navbar = ({setModal}) => {
                 </div>
               </div>
             </div>
-            <div className="nav_item" data-aos="fade-down">
+            <div className="nav_item">
               <nav>
                 <ul>
                   <li>
@@ -181,7 +181,7 @@ const Navbar = ({setModal}) => {
                   </li>
                 </ul>
               </nav>
-              <div className="nav_lan" data-aos="fade-left">
+              <div className="nav_lan">
                 <div className="search_box">
                   <div className={`search`} onClick={()=>setDisable(!disable)}>
                     <svg

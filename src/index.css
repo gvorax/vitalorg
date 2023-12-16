@@ -455,6 +455,9 @@ html {
 
 /* small screen  */
 @media screen and (max-width: 576px) {
+  .shop .swiper-slide h5{
+    line-height: 50px;
+  }
   .sider-nav .sider-ul li a {
     font-size: 20px;
   }
@@ -463,11 +466,14 @@ html {
   }
   .shop .swiper {
     width: 100%;
+    padding-bottom: 30px;
+    margin: 0;
   }
   .shop .swiper-slide {
-    width: 80%;
+    width: 100% !important;
+    padding: 0 auto !important;
     margin: 0;
-    padding-bottom: 30px;
+    
   }
   .shop .swiper-slide img {
     height: 200px;

@@ -1,0 +1,178 @@
+.shop {
+  width: 100%;
+  padding-top: 50px;
+  background-image: url("../../assets/small\ wave.png");
+  background-size: cover;
+  padding-bottom: 158px;
+  animation: wave2 10s infinite linear;
+  h2 {
+    padding-top: 155px;
+    color: #222;
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 73.6px;
+  }
+  span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 55px;
+  }
+
+  .swiper {
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .swiper-slide {
+    width: 430px !important;
+    padding-bottom: 57px;
+    text-align: center;
+    margin: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 3px solid white;
+    background: #fff;
+    box-shadow: 0px 0px 25px 8px rgba(19, 187, 234, 0.15);
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &:focus,
+    &:hover {
+      border-radius: 10px;
+      border: 3px solid #13bbea;
+      background: #fff;
+      box-shadow: 0px 0px 25px 8px rgba(19, 187, 234, 0.15);
+    }
+
+    h5 {
+      color: #222;
+      text-align: center;
+      font-family: Playfair Display;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 141.4px;
+      padding-top: 6px;
+    }
+
+    p {
+      width: 80%;
+      color: #666;
+      text-align: center;
+      font-family: PT Sans;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 23px;
+      max-height: 142px;
+      overflow-y: hidden;
+    }
+    .more_link{
+      color: #f5a93f;
+      text-align: center;
+      font-family: Playfair Display;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 41.4px;
+    }
+    span {
+      color: #f5a93f;
+      text-align: center;
+      font-family: Playfair Display;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 41.4px;
+      margin-bottom: 40px;
+    }
+
+    button {
+      transition: 0.2s all ease-in-out;
+
+      padding: 17px 70px;
+      color: #000;
+      text-align: center;
+      font-family: PT Sans;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 27.6px;
+      border-radius: 30px;
+      border: 2px solid #13bbea;
+      background: #fff;
+
+      svg {
+        transition: 0.2s all ease-in-out;
+        margin-right: 5px !important;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      img {
+        opacity: 0.5;
+      }
+
+      button {
+        background: #f5a93f;
+        border-color: #f5a93f;
+        color: #fff;
+
+        svg path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+
+  .swiper-slide img {
+    padding: 20px;
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: 0.2s all ease-in-out;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 64px;
+    height: 64px;
+    border: none;
+    border-radius: 50px;
+    background: #f5a93f;
+    color: white;
+    padding: 16px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    position: absolute;
+    font-size: 32px;
+    margin: 16px !important;
+  }
+
+}
+
+@keyframes wave2 {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -100%;
+  }
+}
+

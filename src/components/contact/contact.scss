@@ -1,0 +1,139 @@
+.contact {
+  margin-top: 110px;
+  width: 100%;
+  padding-bottom: 165px;
+
+  h2 {
+    color: #222;
+    font-family: Playfair Display;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 73.6px;
+    margin-bottom: 68px;
+    text-align: center;
+
+    span {
+      color: #13bbea;
+      font-family: Playfair Display;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 115%;
+    }
+  }
+
+  .contact_info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .info_day {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .building {
+        width: 410px;
+        height: 270px;
+        background: #fff;
+        box-shadow: 0px 0px 60px 8px rgba(55, 160, 209, 0.12);
+        padding: 40px 50px;
+
+        h3 {
+          color: #222;
+          font-family: PT Sans;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          padding-bottom: 23px;
+
+          span {
+            margin-right: 12px;
+            width: 3px;
+            height: 20px;
+            display: inline-block;
+            background: #37a0d1;
+          }
+        }
+        .building_info {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          margin-bottom: 20px;
+
+          a {
+            max-width: 287px;
+            display: inline-block;
+            text-decoration: none;
+            color: #222;
+            font-family: PT Sans;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 19.8px;
+          }
+        }
+      }
+      .days {
+        width: 410px;
+        height: 410px;
+        flex-shrink: 0;
+        background: #fff;
+        box-shadow: 0px 0px 60px 8px rgba(55, 160, 209, 0.12);
+        padding: 40px 50px;
+
+        h3 {
+          color: #222;
+          font-family: PT Sans;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          padding-bottom: 23px;
+
+          span {
+            margin-right: 12px;
+            width: 3px;
+            height: 20px;
+            display: inline-block;
+            background: #37a0d1;
+          }
+        }
+        .time {
+            
+          p {
+            color: rgba(34, 34, 34, 0.8);
+            font-family: Playfair Display;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 19.8px;
+            padding-bottom: 20px;
+
+            span {
+              color: #222;
+              font-family: Playfair Display;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 19.8px;
+            }
+          }
+        }
+      }
+    }
+
+    .info_map{
+        width: 700px;
+        height: 700px;
+
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
+    }
+  }
+}

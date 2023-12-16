@@ -1,0 +1,257 @@
+.promotion {
+  margin-top: 50px;
+  .container {
+    .pro_title {
+      color: #222;
+      text-align: center;
+      font-family: Playfair Display;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 73.6px;
+
+      .subTitle {
+        color: #13bbea;
+        font-family: Playfair Display;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 115%;
+        display: block;
+      }
+    }
+    span {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .promotion_box {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-top: 50px;
+      padding-bottom: 180px;
+      flex-wrap: wrap;
+
+      .box_item {
+        max-width: 210px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation: rotate 1s linear;
+      
+
+        .box_item_img {
+          max-width: 120px;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        h3 {
+          padding-top: 15px;
+          color: #222;
+          text-align: center;
+          font-family: Playfair Display;
+          font-size: 28px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 32.2px;
+          padding-bottom: 30px;
+        }
+        p {
+          color: #666;
+          text-align: center;
+          font-family: PT Sans;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          padding-bottom: 13px;
+        }
+        .underline {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+      .box_item_wave {
+        height: 336px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .water {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 27px;
+      padding-bottom: 160px;
+
+      .water_title {
+        h2 {
+          color: #222;
+          text-align: center;
+          font-family: Playfair Display;
+          font-size: 64px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 73.6px;
+        }
+        span {
+          display: flex;
+          justify-content: end;
+        }
+      }
+      .line_blue {
+        width: 4px;
+        height: 100px;
+        background: #346bae;
+      }
+      p {
+        color: #666;
+        font-family: PT Sans;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 499px;
+      }
+    }
+
+    .water_property {
+      width: 100%;
+      display: flex;
+      gap: 100px;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 150px;
+
+      .property1 {
+        display: flex;
+        flex-direction: column;
+        gap: 120px;
+        justify-items: end;
+        
+
+        .proBox {
+          display: flex;
+          justify-content: end;
+          flex-direction: column;
+          align-items: flex-end;
+          position: relative;
+          gap: 12px;
+
+
+          h3 {
+            color: #222;
+            text-align: center;
+            font-family: Playfair Display;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 41.4px;
+          }
+          h4 {
+            color: #37a0d1;
+            text-align: center;
+            font-family: PT Sans;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32.2px;
+          }
+          p {
+            color: #666;
+            text-align: right;
+            font-family: PT Sans;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            width: 450px;
+
+            span {
+              width: 3px;
+              height: 20px;
+              background: #37a0d1;
+              display: inline-block;
+            }
+          }
+          .pro_img{
+            position: absolute;
+            top: -100px;
+            right: -50px;
+            z-index: -1;
+            max-width: 147px;
+
+            img{
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .property2{
+        animation: animat 1.8s ease-in-out 0s infinite;
+      }
+      .property3{
+        justify-content: flex-start;
+
+        .proBox{
+          justify-content: flex-start;
+          align-items: flex-start;
+
+          p{
+            text-align: left;
+          }
+
+          .pro_img{
+            position: absolute;
+            top: -100px;
+            left: -50px;
+            z-index: -1;
+            max-width: 147px;
+
+            img{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes animat {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(-10deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@media screen and (max-width:1440px) {
+  .promotion .container .water_property .property1 .proBox p{
+    width: 250px;
+  }
+  
+}

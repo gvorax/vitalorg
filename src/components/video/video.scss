@@ -1,0 +1,223 @@
+.video {
+  width: 100%;
+  background-image: url("../../assets/big\ wave.png");
+  background-size: cover;
+  padding-top: 300px;
+  padding-bottom: 300px;
+  animation: wave3 12s infinite linear;
+  position: relative;
+  .video_box {
+    max-width: 1260px;
+    margin: 0 auto;
+
+    .video_title {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      padding-bottom: 77px;
+
+      h2 {
+        color: #222;
+        font-family: Playfair Display;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 73.6px;
+
+        span {
+          color: #13bbea;
+          font-family: Playfair Display;
+          font-size: 64px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 115%;
+        }
+      }
+      .video_text {
+        p {
+          width: 360px;
+          color: #666;
+          font-family: PT Sans;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        .subLink {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          cursor: pointer;
+          margin-top: 6px;
+        }
+      }
+    }
+
+    .video_water {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // gap: 100px;
+
+      .water_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        .item_box {
+          width: 160px;
+          height: 160px;
+          border-radius: 50%;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0px 4px 45px rgba(55, 160, 209, 0.22);
+        }
+        p {
+          color: #222;
+          text-align: center;
+          font-family: PT Sans;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          padding-top: 12px;
+          width: 209px;
+        }
+        .line {
+          position: absolute;
+          top: 20%;
+          right: -60%;
+          z-index: 0;
+        }
+      }
+    }
+    .video_container {
+      width: 100%;
+      margin-top: 93px;
+
+      iframe {
+        // width: 100%;
+        height: 708px;
+        border-radius: 10px;
+      }
+      .bg_video-content{
+        height: 500px;
+        outline: none;
+      }
+    }
+  }
+  .damas {
+    position: absolute;
+    top: -120px;
+    right: 100px;
+    max-width: 445px;
+    transform: rotate(5deg);
+    animation: damasAnime 7s infinite linear;
+
+    .damas_main {
+      width: 100%;
+      position: relative;
+
+      img {
+        width: 100%;
+      }
+
+      .balon {
+        position: absolute;
+        left: 112px;
+        bottom: 30px;
+        width: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        animation: balon 2s infinite linear;
+
+        img {
+          width: 100%;
+        }
+
+        &:nth-child(2) {
+          left: 318px;
+          z-index: 2;
+          bottom: 55px;
+          width: 64px;
+          animation: balon 2s infinite linear;
+        }
+      }
+    }
+  }
+}
+.swiper {
+  width: 90%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  width: 64px;
+  height: 64px;
+  border: none;
+  border-radius: 50px;
+  background: #f5a93f;
+  color: white;
+  padding: 16px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  position: absolute;
+  font-size: 32px;
+  margin: 16px !important;
+}
+
+@keyframes balon {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes wave3 {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -100%;
+  }
+}
+@keyframes damasAnime {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(80px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(80px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

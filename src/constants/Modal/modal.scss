@@ -1,0 +1,131 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .connect {
+    width: 837px;
+    height: 493px;
+    border-radius: 5px;
+    background: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: popUp 0.3s linear;
+
+    h3 {
+      color: #222;
+      font-family: Playfair Display;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+
+      span {
+        width: 4px;
+        height: 23px;
+        flex-shrink: 0;
+        background: linear-gradient(94deg, #37a0d1 -1.21%, #0cf 116.84%);
+        display: inline-block;
+      }
+    }
+    h2 {
+      color: #222;
+      text-align: center;
+      font-family: Playfair Display;
+      font-size: 35px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      padding: 10px 0;
+    }
+    p {
+      color: #222;
+      text-align: center;
+      font-family: Playfair Display;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24.244px;
+      padding-bottom: 10px;
+    }
+
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
+
+      input {
+        width: 100%;
+        padding: 16px 20px;
+        border: 1px solid #e3e3e3;
+        font-size: 20px;
+        font-family: PT Sans;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: #000000;
+        outline: none;
+
+        &::placeholder {
+          color: #939393;
+          font-family: PT Sans;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+      button {
+        outline: none;
+        padding: 20px 22px;
+        color: #0cf;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 14.35px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 15.307px; /* 106.667% */
+        letter-spacing: 2.87px;
+        text-transform: uppercase;
+        border-radius: 9.567px;
+        border: 0.957px solid #0cf;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        background-color: #fff;
+
+        &:hover {
+          background-color: #0cf;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@keyframes popUp {
+  0% {
+    transform: translateY(0) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%) scale(1);
+    opacity: 1;
+  }
+}

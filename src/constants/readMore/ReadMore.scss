@@ -1,0 +1,45 @@
+.read-more-container {
+    max-width: 100%; /* Adjust as needed */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .text {
+    transition: max-height 0.5s ease-out;
+    max-height: 100px; /* Adjust the initial height */
+    overflow: hidden;
+  }
+  
+  .text p {
+    margin: 0 0 20px;
+    text-align: justify; /* Add margin between paragraphs */
+  }
+  
+  .show-full-text {
+    max-height: 1000px; /* Adjust to a large enough value */
+  }
+  
+  .subLink {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    gap: 10px;
+    cursor: pointer;
+    padding-bottom: 50px;
+  }
+  .underline {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .link {
+    color: #f5a93f;
+    text-align: center;
+    font-family: PT Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }

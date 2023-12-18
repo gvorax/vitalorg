@@ -325,6 +325,15 @@
             padding: 15px;
             border-bottom: 1px solid #e3e3e3;
             transition: 0.3s ease-in-out;
+            cursor: pointer;
+
+            &.active {
+              background: #f5a93f;
+
+              a {
+                color: #fff;
+              }
+            }
 
             &:last-child {
               border-bottom: none;
@@ -348,7 +357,7 @@
             }
 
             &:hover {
-              background: #f5a93f;
+              background: #ffcc85;
 
               a {
                 color: #fff;

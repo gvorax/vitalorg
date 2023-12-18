@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -12,6 +12,7 @@ AOS.init();
 function App() {
   const [modal, setModal] = useState(false);
   const [modal1, setModal1] = useState(false);
+
 
   return (
     <div className="app">

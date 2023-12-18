@@ -3,7 +3,7 @@ import "./certificate.scss";
 
 const CertificateModal = ({setModal}) => {
   return (
-    <div className="modal1" onClick={() => setModal(false)}>
+    <div className="modal1" onClick={() => {setModal(false); document.body.style.overflowY = "auto"}}>
       <div className="connect1" onClick={(e) => e.stopPropagation()}>
         <div className="modal_title">
           <h2>Tasdiqlangan</h2>

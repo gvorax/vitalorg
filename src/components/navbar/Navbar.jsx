@@ -23,16 +23,16 @@ import { useContext } from "react";
 import { ProductContext } from "../../context/context";
 import ProductModal from "../../constants/Modal/productModal";
 
-const Navbar = ({setModal}) => {
-  const [info, setInfo] = useState(false)
+const Navbar = ({ setModal }) => {
+  const [info, setInfo] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredItems, setFilteredItems] = useState([]);
-  const [product, setProduct] = useState([])
+  const [product, setProduct] = useState([]);
   const { t, i18n } = useTranslation();
   const [open, setOpen] = useState(false);
-  const {setPro_id} = useContext(ProductContext)
-  const [disable, setDisable] = useState(false)
-  const [disable1, setDisable1] = useState(false)
+  const { setPro_id } = useContext(ProductContext);
+  const [disable, setDisable] = useState(false);
+  const [disable1, setDisable1] = useState(false);
   const showDrawer = () => {
     setOpen(true);
   };
@@ -43,7 +43,7 @@ const Navbar = ({setModal}) => {
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
     localStorage.setItem("language", lng);
-    // location.reload();
+    location.reload();
   };
 
   const getOrders = async () => {
@@ -54,15 +54,14 @@ const Navbar = ({setModal}) => {
     // setLoading(false);
   };
 
-  useEffect(()=>{
-    getOrders()
-  },[])
-
+  useEffect(() => {
+    getOrders();
+  }, []);
 
   const handleSearch = (query) => {
     const filtered =
-      query === ''
-        ? product
+      query === ""
+        ? []
         : product.filter((item) =>
             item.name.toLowerCase().includes(query.toLowerCase())
           );
@@ -75,11 +74,13 @@ const Navbar = ({setModal}) => {
     handleSearch(query);
   };
 
-  const handleClick = (item)=>{
-    setPro_id(item._id)
+  const handleClick = (item) => {
+    setPro_id(item._id);
     // setModal(true)
-    setInfo(true)
-  }
+    setInfo(true);
+
+    document.body.style.overflowY = "hidden";
+  };
 
   return (
     <React.Fragment>
@@ -183,7 +184,10 @@ const Navbar = ({setModal}) => {
               </nav>
               <div className="nav_lan">
                 <div className="search_box">
-                  <div className={`search`} onClick={()=>setDisable(!disable)}>
+                  <div
+                    className={`search`}
+                    onClick={() => setDisable(!disable)}
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -199,7 +203,7 @@ const Navbar = ({setModal}) => {
                       />
                     </svg>
                   </div>
-                  <div className={`${disable ? `block`: ``} search_place`} >
+                  <div className={`${disable ? `block` : ``} search_place`}>
                     <div className="search_input">
                       <input
                         type="text"
@@ -222,19 +226,21 @@ const Navbar = ({setModal}) => {
                         />
                       </svg>
                     </div>
-                    {/* <div className="result_item">
+                    <div className="result_item">
                       <ul>
                         {filteredItems.map((item) => (
-                          <li onClick={()=>handleClick(item)} key={item.id}>{item.name}</li>
+                          <li onClick={() => handleClick(item)} key={item.id}>
+                            {item.name}
+                          </li>
                         ))}
                       </ul>
-                    </div> */}
+                    </div>
                   </div>
                 </div>
 
                 {/* dropdown for language button  */}
                 <div className="dropdown">
-                  <div className="lan" onClick={()=>setDisable1(!disable1)}>
+                  <div className="lan" onClick={() => setDisable1(!disable1)}>
                     <svg
                       width="27"
                       height="27"
@@ -248,39 +254,48 @@ const Navbar = ({setModal}) => {
                       />
                     </svg>
                   </div>
-                  <div className={`${disable1 ? `block`: ``} dropdown-content`}>
-                    <div className="flag">
+                  <div
+                    className={`${disable1 ? `block` : ``} dropdown-content`}
+                  >
+                    <div
+                      className={`flag ${
+                        localStorage.getItem("language") === "eng"
+                          ? "active"
+                          : ""
+                      }`}
+                      onClick={(e) => {
+                        changeLanguage("eng");
+                      }}
+                    >
                       <img src={English} alt="" />
-                      <a
-                        href="#"
-                        onClick={(e) => {
-                          changeLanguage("eng");
-                        }}
-                      >
-                        English
-                      </a>
+                      <a href="#">English</a>
                     </div>
-                    <div className="flag">
+                    <div
+                      className={`flag ${
+                        localStorage.getItem("language") === "uzb" ||
+                        localStorage.getItem("language") === null
+                          ? "active"
+                          : ""
+                      }`}
+                      onClick={(e) => {
+                        changeLanguage("uzb");
+                      }}
+                    >
                       <img src={Uzbek} alt="" />
-                      <a
-                        href="#"
-                        onClick={(e) => {
-                          changeLanguage("uzb");
-                        }}
-                      >
-                        Uzbek
-                      </a>
+                      <a href="#">Uzbek</a>
                     </div>
-                    <div className="flag">
+                    <div
+                      className={`flag ${
+                        localStorage.getItem("language") === "rus" 
+                          ? "active"
+                          : ""
+                      }`}
+                      onClick={(e) => {
+                        changeLanguage("rus");
+                      }}
+                    >
                       <img src={Russian} alt="" />
-                      <a
-                        href="#"
-                        onClick={(e) => {
-                          changeLanguage("rus");
-                        }}
-                      >
-                        Русский
-                      </a>
+                      <a href="#">Русский</a>
                     </div>
                   </div>
                 </div>
@@ -292,7 +307,7 @@ const Navbar = ({setModal}) => {
           </div>
         </div>
       </div>
-      {info && <ProductModal setModal={setModal} setInfo={setInfo}/>}
+      {info && <ProductModal setModal={setModal} setInfo={setInfo} />}
     </React.Fragment>
   );
 };

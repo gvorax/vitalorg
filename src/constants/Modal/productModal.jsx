@@ -9,19 +9,20 @@ import { t } from "i18next";
 const ProductModal = ({ setModal, setInfo }) => {
   const [data, setData] = useState();
   const [loading, setLoading] = useState(true);
-  const {pro_id} = useContext(ProductContext)
+  const { pro_id } = useContext(ProductContext);
 
   useEffect(() => {
     setLoading(true);
     const getProduct = async () => {
-      const res = await axios.get(`https://vital.zirapcha.uz/api/product/${pro_id}`);
+      const res = await axios.get(
+        `https://vital.zirapcha.uz/api/product/${pro_id}`
+      );
       setLoading(false);
       setData(res.data.data.product);
     };
 
     getProduct();
   }, []);
-
 
   const { setPro_id } = useContext(ProductContext);
 
@@ -30,7 +31,13 @@ const ProductModal = ({ setModal, setInfo }) => {
   };
 
   return (
-    <div className="product_model" onClick={() => setInfo(false)}>
+    <div
+      className="product_model"
+      onClick={() => {
+        setInfo(false);
+        document.body.style.overflowY = "auto"
+      }}
+    >
       <div className="product_box" onClick={(e) => e.stopPropagation()}>
         {loading ? (
           <p>Yuklanyapti...</p>
@@ -65,7 +72,7 @@ const ProductModal = ({ setModal, setInfo }) => {
                   setModal(true);
                 }}
               >
-               {t("order")}
+                {t("order")}
               </button>
             </div>
           </div>

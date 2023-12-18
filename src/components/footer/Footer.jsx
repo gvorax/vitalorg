@@ -3,6 +3,11 @@ import React from "react";
 import { Link } from "react-scroll";
 import "./footer.scss";
 
+// useEffect(() => {
+// window.
+// }, [])
+
+
 const Footer = ({ setModal }) => {
   return (
     <div className="footer">

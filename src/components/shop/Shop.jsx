@@ -85,6 +85,7 @@ const Shop = ({ setModal }) => {
             <SwiperSlide key={index} onClick={() => {
               setInfo(true);
               setPro_id(item?._id);
+              document.body.style.overflowY = "hidden"
             }}>
               <div className="item_img">
                 <img

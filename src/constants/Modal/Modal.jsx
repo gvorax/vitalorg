@@ -38,7 +38,6 @@ const Modal = ({ setModal }) => {
     getWater();
 
     if (data.name && data.phone_number && pro_id) {
-
       let res = await axios.post(`https://vital.zirapcha.uz/api/order/create`, {
         name: data.name,
         phone_number: data.phone_number,
@@ -59,6 +58,7 @@ const Modal = ({ setModal }) => {
         );
       }
       setModal(false);
+      document.body.style.overflowY = "auto";
     } else {
       toast.warn("Ma'lumotlarni to'liq to'ldiring...", {
         position: toast.POSITION.TOP_CENTER,
@@ -66,7 +66,13 @@ const Modal = ({ setModal }) => {
     }
   };
   return (
-    <div className="modal" onClick={() => setModal(false)}>
+    <div
+      className="modal"
+      onClick={() => {
+        document.body.style.overflowY = "auto";
+        setModal(false);
+      }}
+    >
       <div className="connect" onClick={(e) => e.stopPropagation()}>
         <h3>
           {" "}

@@ -39,10 +39,10 @@ i18n.use(initReactI18next).init({
         confirmedText: `Suvning hayotimizdagi ahamiyati tufayli biz mijozlarimizga 99,99%
         toza suv beramiz.`,
         confirmedText1: `Bizning suvlarimizda 0,5 mg/l dan kamroq kloridlar mavjud.`,
-        confirmedTexta: `Suv tarkibida turli xil bakteriyalar mavjud. Biz suvimizni 9 bosqichli filtrlash jarayonidan o’tkazamiz `,
-        confirmedTexta1: `va tarkibiga Saudi Arabistondan keltirilgan asl Zam-Zam suvlaridan qo’shamiz.`,
-        confirmedTextb: `Mijozlarimiz sog’liqlarini o’ylaymiz! Suvimiz tarkibidagi keraksiz mikroelementlardan tozalash jarayonlarini`,
-        confirmedTextb1: `yapon va xitoy texnologiyalarida va albatta to’liq avtomatlashtirilgan texnikalarda bajaramiz.`,
+        confirmedTexta: `Suv tarkibida turli xil bakteriyalar mavjud. Biz suvimizni 9 bosqichli filtrlash `,
+        confirmedTexta1: `jarayonidan o’tkazamiz va tarkibiga Saudi Arabistondan keltirilgan asl Zam-Zam suvlaridan qo’shamiz.`,
+        confirmedTextb: `Mijozlarimiz sog’liqlarini o’ylaymiz! Suvimiz tarkibidagi keraksiz mikroelementlardan `,
+        confirmedTextb1: `tozalash jarayonlarini yapon va xitoy texnologiyalarida va albatta to’liq avtomatlashtirilgan texnikalarda bajaramiz.`,
         confirmedTextc: `Ishlab chiqarish va qadoqlash jarayonlari to'la
         avtomatlashtirilgan`,
         confirmedTextc1: ` va har qanday inson aralashuvidan himoyalangan`,

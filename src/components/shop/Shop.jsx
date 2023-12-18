@@ -12,7 +12,6 @@ import axios from "axios";
 import { useTranslation } from "react-i18next";
 import { ProductContext } from "../../context/context";
 import ProductModal from "../../constants/Modal/productModal";
-// import { FreeMode, Autoplay } from "swiper/modules";
 
 const Shop = ({ setModal }) => {
   const { setPro_id } = useContext(ProductContext);
@@ -45,7 +44,7 @@ const Shop = ({ setModal }) => {
             d="M3 6.91579C5.5 3.18778 9.5 0.743381 13.5 6.12117C17.2352 11.1429 22.3333 8.56566 23.5 6.12114C25.3607 2.22236 31.5 2.22236 34 5.64481C37.6316 10.6164 41.5 9.55628 43 5.64481"
             stroke="#F5A93F"
             strokeWidth="5"
-            stroke-linecap="round"
+            strokeLinecap="round"
           />
         </svg>
       </span>

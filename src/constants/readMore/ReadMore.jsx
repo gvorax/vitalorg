@@ -36,8 +36,8 @@ const ReadMoreButton = ({ paragraphs, class1 }) => {
             d="M17 1L21 5M21 5L17 9M21 5H1"
             stroke="#F5A93F"
             strokeWidth="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </svg>
       </div>

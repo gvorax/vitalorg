@@ -63,9 +63,9 @@ const Video = () => {
                   d="M1 4.87011C55 -3.9994 100.5 4.8695 147 43.0009"
                   stroke="#D9D9D9"
                   strokeWidth="2"
-                  stroke-miterlimit="16"
-                  stroke-linejoin="round"
-                  stroke-dasharray="7 7"
+                  strokeMiterlimit="16"
+                  strokeLinejoin="round"
+                  strokeDasharray="7 7"
                 />
               </svg>
             </div>
@@ -162,9 +162,9 @@ const Video = () => {
                   d="M1 4.87011C55 -3.9994 100.5 4.8695 147 43.0009"
                   stroke="#D9D9D9"
                   strokeWidth="2"
-                  stroke-miterlimit="16"
-                  stroke-linejoin="round"
-                  stroke-dasharray="7 7"
+                  strokeMiterlimit="16"
+                  strokeLinejoin="round"
+                  strokeDasharray="7 7"
                 />
               </svg>
             </div>
@@ -229,9 +229,9 @@ const Video = () => {
                   d="M1 4.87011C55 -3.9994 100.5 4.8695 147 43.0009"
                   stroke="#D9D9D9"
                   strokeWidth="2"
-                  stroke-miterlimit="16"
-                  stroke-linejoin="round"
-                  stroke-dasharray="7 7"
+                  strokeMiterlimit="16"
+                  strokeLinejoin="round"
+                  strokeDasharray="7 7"
                 />
               </svg>
             </div>
@@ -253,9 +253,9 @@ const Video = () => {
                   d="M1 4.87011C55 -3.9994 100.5 4.8695 147 43.0009"
                   stroke="#D9D9D9"
                   strokeWidth="2"
-                  stroke-miterlimit="16"
-                  stroke-linejoin="round"
-                  stroke-dasharray="7 7"
+                  strokeMiterlimit="16"
+                  strokeLinejoin="round"
+                  strokeDasharray="7 7"
                 />
               </svg>
             </div>
@@ -269,7 +269,7 @@ const Video = () => {
                 viewBox="0 0 87 78"
                 fill="none"
               >
-                <g clip-path="url(#clip0_36_114)">
+                <g clipPath="url(#clip0_36_114)">
                   <path
                     d="M0 0.136532C0 0.198535 0.0618777 0.223336 0.123755 0.186134C0.185633 0.148932 0.247511 0.086929 0.247511 0.0497271C0.247511 0.0249258 0.198009 0.000124544 0.123755 0.000124544C0.0618777 0.000124544 0 0.0621277 0 0.136532Z"
                     fill="#13BBEA"
@@ -322,17 +322,13 @@ const Video = () => {
             slidesPerView={1}
             spaceBetween={30}
             freeMode={true}
-            // autoplay={{
-            //   delay: 5000,
-            //   disableOnInteraction: false,
-            // }}
-            autoPlay={false}
+            autoplay={false}
             navigation={true}
             modules={[FreeMode, Navigation, Autoplay]}
             className="mySwiper"
           >
             <SwiperSlide>
-              <video className="bg_video-content" controls autoPlay muted loop>
+              <video className="bg_video-content" controls autoplay muted loop>
                 <source src={Video1} type="video/mp4" />
                 Your browser does not support HTML5 video.
               </video>

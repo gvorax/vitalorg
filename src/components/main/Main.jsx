@@ -18,20 +18,11 @@ const Main = ({ setModal, setModal1 }) => {
     <div className="main" id="home">
       <div className="bg_video">
         {/* video for background width fullscreen and it is located background */}
-        <video className="bg_video-content" autoPlay muted loop>
+        <video className="bg_video-content" autoplay muted loop>
           <source src={video} type="video/mp4" />
           Your browser does not support HTML5 video.
         </video>
-        {/* <iframe
-          className="bg_video-content"
-          id="video-background"
-          width="100%"
-          height="100%"
-          src="https://www.youtube.com/embed/2SOBltiw7do?si=tdRqieQoPU75FB1Y"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe> */}
+
         
       </div>
       <Navbar setModal={setModal}/>

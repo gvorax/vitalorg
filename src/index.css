@@ -456,6 +456,12 @@ html {
 
 /* small screen  */
 @media screen and (max-width: 576px) {
+  .footer .top_button{
+    width: 20px;
+    height: 20px;
+    bottom: 0;
+    right: 10px;
+  }
   .block{
     display: none;
   }
@@ -538,10 +544,6 @@ html {
 
   .footer .footer_bg .bg_wave3 {
     height: 800px;
-  }
-
-  .footer .top_button {
-    padding-bottom: 100px !important;
   }
 
   .wrapper {

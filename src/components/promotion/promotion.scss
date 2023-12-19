@@ -42,7 +42,6 @@
         justify-content: center;
         align-items: center;
         animation: rotate 1s linear;
-      
 
         .box_item_img {
           max-width: 120px;
@@ -138,7 +137,6 @@
         flex-direction: column;
         gap: 120px;
         justify-items: end;
-        
 
         .proBox {
           display: flex;
@@ -147,7 +145,6 @@
           align-items: flex-end;
           position: relative;
           gap: 12px;
-
 
           h3 {
             color: #222;
@@ -184,42 +181,64 @@
               display: inline-block;
             }
           }
-          .pro_img{
+          .pro_img {
             position: absolute;
             top: -100px;
             right: -50px;
             z-index: -1;
             max-width: 147px;
 
-            img{
+            img {
               width: 100%;
             }
           }
         }
       }
 
-      .property2{
-        animation: animat 1.8s ease-in-out 0s infinite;
+      .property2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .property2_img {
+          animation: animat 1.8s ease-in-out 0s infinite;
+        }
+
+        .simvol{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+
+          .simvol1{
+            max-width: 120px;
+
+            img{
+              width: 100%;
+            }
+          }
+        }
+
       }
-      .property3{
+      .property3 {
         justify-content: flex-start;
 
-        .proBox{
+        .proBox {
           justify-content: flex-start;
           align-items: flex-start;
 
-          p{
+          p {
             text-align: left;
           }
 
-          .pro_img{
+          .pro_img {
             position: absolute;
             top: -100px;
             left: -50px;
             z-index: -1;
             max-width: 147px;
 
-            img{
+            img {
               width: 100%;
             }
           }
@@ -249,9 +268,8 @@
   }
 }
 
-@media screen and (max-width:1440px) {
-  .promotion .container .water_property .property1 .proBox p{
+@media screen and (max-width: 1440px) {
+  .promotion .container .water_property .property1 .proBox p {
     width: 250px;
   }
-  
 }

@@ -5,6 +5,9 @@ import Image2 from "../../assets/image2.png";
 import Image3 from "../../assets/image3.png";
 import Image4 from "../../assets/image4.png";
 import Image5 from "../../assets/image5.png";
+import Simvol1 from "../../assets/soglik.png";
+import Simvol2 from "../../assets/garantiya.png";
+import Simvol3 from "../../assets/dostavka.png";
 import drop from "../../assets/drop.png";
 import VitalWater from "../../assets/vitalWater.png";
 import { useTranslation } from "react-i18next";
@@ -216,7 +219,20 @@ const Promotion = () => {
             </div>
           </div>
           <div className="property2">
-            <img src={VitalWater} alt="" />
+            <div className="property2_img">
+              <img src={VitalWater} alt="" />
+            </div>
+            <div className="simvol">
+              <div className="simvol1">
+                <img src={Simvol1} alt="" />
+              </div>
+              <div className="simvol1">
+                <img src={Simvol2} alt="" />
+              </div>
+              <div className="simvol1">
+                <img src={Simvol3} alt="" />
+              </div>
+            </div>
           </div>
           <div className="property1 property3">
             <div className="proBox" data-aos="fade-right" data-aos-delay="200">

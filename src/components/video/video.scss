@@ -185,6 +185,10 @@
   margin: 16px !important;
 }
 
+.video_text .text{
+  max-height: 120px;
+}
+
 @keyframes balon {
   0% {
     transform: rotate(0deg);

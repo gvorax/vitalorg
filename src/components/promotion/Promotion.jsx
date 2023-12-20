@@ -5,37 +5,25 @@ import Image2 from "../../assets/image2.png";
 import Image3 from "../../assets/image3.png";
 import Image4 from "../../assets/image4.png";
 import Image5 from "../../assets/image5.png";
-import Simvol1 from "../../assets/soglik.png";
-import Simvol2 from "../../assets/garantiya.png";
-import Simvol3 from "../../assets/dostavka.png";
+
 import drop from "../../assets/drop.png";
 import VitalWater from "../../assets/vitalWater.png";
 import { useTranslation } from "react-i18next";
 import ReadMoreButton from "../../constants/readMore/ReadMore";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode, Navigation, Autoplay } from "swiper/modules";
 
 const Promotion = () => {
   const { t } = useTranslation();
 
-  const paragraphs = [
-    `${t("confirmedText")}`,
-    `${t("confirmedText1")}`,
-  ]
-  const paragraphsa = [
-    `${t("confirmedTexta")}`,
-    `${t("confirmedTexta1")}`,
-  ]
-  const paragraphsb = [
-    `${t("confirmedTextb")}`,
-    `${t("confirmedTextb1")}`,
-  ]
-  const paragraphsc = [
-    `${t("confirmedTextc")}`,
-    `${t("confirmedTextc1")}`,
-  ]
-  const paragraphsd = [
-    `${t("confirmedTextd")}`,
-    `${t("confirmedTextd1")}`,
-  ]
+  const paragraphs = [`${t("confirmedText")}`, `${t("confirmedText1")}`];
+  const paragraphsa = [`${t("confirmedTexta")}`, `${t("confirmedTexta1")}`];
+  const paragraphsb = [`${t("confirmedTextb")}`, `${t("confirmedTextb1")}`];
+  const paragraphsc = [`${t("confirmedTextc")}`, `${t("confirmedTextc1")}`];
+  const paragraphsd = [`${t("confirmedTextd")}`, `${t("confirmedTextd1")}`];
 
   return (
     <div className="promotion" id="promotion">
@@ -158,6 +146,86 @@ const Promotion = () => {
           </div>
         </div>
 
+        <div className="mobile_promotion">
+          <div className="video_container">
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={30}
+              freeMode={true}
+              autoplay={false}
+              navigation={true}
+              modules={[FreeMode, Navigation, Autoplay]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <div
+                  className="box_item"
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                >
+                  <div className="box_item_img">
+                    <img src={Image1} alt="" />
+                  </div>
+                  <h3>{t("confirmed")}</h3>
+                  <ReadMoreButton paragraphs={paragraphs} class1={true} />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div
+                  className="box_item"
+                  data-aos="fade-right"
+                  data-aos-delay="400"
+                >
+                  <div className="box_item_img">
+                    <img src={Image2} alt="" />
+                  </div>
+                  <h3>{t("confirmed")}</h3>
+                  <ReadMoreButton paragraphs={paragraphsa} class1={true} />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div
+                  className="box_item"
+                  data-aos="fade-right"
+                  data-aos-delay="600"
+                >
+                  <div className="box_item_img">
+                    <img src={Image3} alt="" />
+                  </div>
+                  <h3>{t("confirmed")}</h3>
+                  <ReadMoreButton paragraphs={paragraphsb} class1={true} />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div
+                  className="box_item"
+                  data-aos="fade-right"
+                  data-aos-delay="800"
+                >
+                  <div className="box_item_img">
+                    <img src={Image4} alt="" />
+                  </div>
+                  <h3>{t("confirmed")}</h3>
+                  <ReadMoreButton paragraphs={paragraphsc} class1={true} />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div
+                  className="box_item"
+                  data-aos="fade-right"
+                  data-aos-delay="1000"
+                >
+                  <div className="box_item_img">
+                    <img src={Image5} alt="" />
+                  </div>
+                  <h3>{t("confirmed")}</h3>
+                  <ReadMoreButton paragraphs={paragraphsd} class1={true} />
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
+
         <div className="water">
           <div className="water_title" data-aos="fade-right">
             <h2>{t("composition")}</h2>
@@ -221,17 +289,6 @@ const Promotion = () => {
           <div className="property2">
             <div className="property2_img">
               <img src={VitalWater} alt="" />
-            </div>
-            <div className="simvol">
-              <div className="simvol1">
-                <img src={Simvol1} alt="" />
-              </div>
-              <div className="simvol1">
-                <img src={Simvol2} alt="" />
-              </div>
-              <div className="simvol1">
-                <img src={Simvol3} alt="" />
-              </div>
             </div>
           </div>
           <div className="property1 property3">

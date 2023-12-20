@@ -12,6 +12,9 @@ import axios from "axios";
 import { useTranslation } from "react-i18next";
 import { ProductContext } from "../../context/context";
 import ProductModal from "../../constants/Modal/productModal";
+import Simvol1 from "../../assets/soglik.png";
+import Simvol2 from "../../assets/garantiya.png";
+import Simvol3 from "../../assets/dostavka.png";
 
 const Shop = ({ setModal }) => {
   const { setPro_id } = useContext(ProductContext);
@@ -81,11 +84,14 @@ const Shop = ({ setModal }) => {
       >
         {data1.map((item, index) => {
           return (
-            <SwiperSlide key={index} onClick={() => {
-              setInfo(true);
-              setPro_id(item?._id);
-              document.body.style.overflowY = "hidden"
-            }}>
+            <SwiperSlide
+              key={index}
+              onClick={() => {
+                setInfo(true);
+                setPro_id(item?._id);
+                document.body.style.overflowY = "hidden";
+              }}
+            >
               <div className="item_img">
                 <img
                   src={`https://vital.zirapcha.uz/api/api/file/${item?.images[0]}`}
@@ -106,17 +112,17 @@ const Shop = ({ setModal }) => {
               {localStorage.getItem("language") == "eng" ? (
                 <p>{item?.description?.eng}</p>
               ) : null}
-              <p className="more_link">{t('more')}</p>
+              <p className="more_link">{t("more")}</p>
               <span>
                 {item?.price} {t("sum")}
               </span>
               <button
-                // onClick={() => {
-                //   (e) => e.stopPropagation()
-                //   setInfo(false)
-                //   setModal(true);
-                //   setPro_id(item?._id);
-                // }}
+              // onClick={() => {
+              //   (e) => e.stopPropagation()
+              //   setInfo(false)
+              //   setModal(true);
+              //   setPro_id(item?._id);
+              // }}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -136,7 +142,52 @@ const Shop = ({ setModal }) => {
           );
         })}
       </Swiper>
-      {info && <ProductModal setInfo={setInfo} setModal={setModal}  />}
+      {info && <ProductModal setInfo={setInfo} setModal={setModal} />}
+
+      <div className="simvol">
+        <div className="simvol1">
+          <img src={Simvol1} alt="" />
+          <p>So'glik uchun xavfsiz</p>
+        </div>
+        <div className="box_item_wave">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="64"
+            viewBox="0 0 16 64"
+            fill="none"
+          >
+            <path
+              d="M8.27864 1C15.2786 9.5 17.4786 23 8.27864 33C-0.921359 43 0.778641 52.5 8.27864 63"
+              stroke="#E3E3E3"
+              strokeWidth="3"
+            />
+          </svg>
+        </div>
+        <div className="simvol1">
+          <img src={Simvol2} alt="" />
+          <p>Sifatiga javob beramiz</p>
+        </div>
+        <div className="box_item_wave">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="64"
+              viewBox="0 0 16 64"
+              fill="none"
+            >
+              <path
+                d="M8.27864 1C15.2786 9.5 17.4786 23 8.27864 33C-0.921359 43 0.778641 52.5 8.27864 63"
+                stroke="#E3E3E3"
+                strokeWidth="3"
+              />
+            </svg>
+          </div>
+        <div className="simvol1">
+          <img src={Simvol3} alt="" />
+          <p>O'zbekiston bo'yicha bepul yetkazib beramiz</p>
+        </div>
+      </div>
     </div>
   );
 };

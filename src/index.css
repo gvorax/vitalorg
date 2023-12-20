@@ -50,6 +50,19 @@ html {
 } */
 
 @media screen and (max-width: 1440px) {
+  .shop .simvol {
+    /* flex-direction: column; */
+    align-items: flex-start;
+    gap: 50px;
+    padding-bottom: 60px;
+  }
+  .shop .simvol .simvol1{
+    max-width: 230px;
+    font-size: 22px;
+  }
+  .shop .simvol .box_item_wave{
+    height: 225px;
+  }
   .show-full-text {
     max-height: 1000px; /* Adjust to a large enough value */
   }
@@ -205,6 +218,19 @@ html {
 }
 
 @media screen and (max-width: 1200px) {
+  .shop .simvol {
+    /* flex-direction: column; */
+    align-items: flex-start;
+    gap: 40px;
+    padding-bottom: 60px;
+  }
+  .shop .simvol .simvol1{
+    max-width: 200px;
+    font-size: 22px;
+  }
+  .shop .simvol .box_item_wave{
+    height: 225px;
+  }
   .text{
     max-height: 100px;
   }
@@ -229,6 +255,19 @@ html {
 
 /* large screen  */
 @media screen and (max-width: 1024px) {
+  .shop .simvol {
+    /* flex-direction: column; */
+    align-items: flex-start;
+    gap: 20px;
+    padding-bottom: 60px;
+  }
+  .shop .simvol .simvol1{
+    max-width: 200px;
+    font-size: 22px;
+  }
+  .shop .simvol .box_item_wave{
+    height: 225px;
+  }
   .show-full-text {
     max-height: 1000px; /* Adjust to a large enough value */
   }
@@ -326,6 +365,19 @@ html {
 
 /* medium screen  */
 @media screen and (max-width: 768px) {
+  .shop .simvol {
+    /* flex-direction: column; */
+    align-items: flex-start;
+    gap: 10px;
+    padding-bottom: 60px;
+  }
+  .shop .simvol .simvol1{
+    max-width: 120px;
+    font-size: 20px;
+  }
+  .shop .simvol .box_item_wave{
+    height: 140px;
+  }
   .text{
     max-height: 108px;
   }
@@ -486,6 +538,27 @@ html {
 
 /* small screen  */
 @media screen and (max-width: 576px) {
+  .mobile_promotion{
+    display: block;
+  }
+  .promotion_box{
+    display: none;
+  }
+  .shop .simvol {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 60px;
+  }
+  .shop .simvol .simvol1{
+    max-width: 200px;
+  }
+  .shop .simvol .box_item_wave{
+    height: 90px;
+  }
+  .promotion .container .water_property .property2 .property2_img{
+    max-width: 250px;
+  }
   .about p{
     width: 90% !important;
     text-align: center;
@@ -869,9 +942,12 @@ html {
     width: 260px;
   }
   .promotion .container .promotion_box {
-    display: flex;
+    display: none;
     justify-content: center;
     gap: 50px;
+  }
+  .promotion .container .mobile_promotion{
+    display: block;
   }
   .promotion {
     margin-top: 100px !important;
@@ -880,4 +956,28 @@ html {
     margin-top: 50px;
     font-size: 40px;
   }
+  .mobile_promotion{
+    display: block;
+  }
+
+
+  .swiper-button-prev,
+.swiper-button-next {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50px;
+  background: #f5a93f;
+  color: white;
+  padding: 16px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  position: absolute;
+  font-size: 16px;
+  margin: 16px !important;
+}
 }

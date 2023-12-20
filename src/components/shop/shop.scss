@@ -29,7 +29,7 @@
     height: 100%;
     overflow: hidden;
   }
-  
+
   .swiper-slide {
     width: 430px !important;
     padding-bottom: 57px;
@@ -78,7 +78,7 @@
       max-height: 142px;
       overflow-y: hidden;
     }
-    .more_link{
+    .more_link {
       color: #f5a93f;
       text-align: center;
       font-family: Playfair Display;
@@ -165,6 +165,36 @@
     margin: 16px !important;
   }
 
+  .simvol {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+    padding-bottom: 50px;
+
+    .simvol1 {
+      max-width: 250px;
+      text-align: center;
+      color: #222;
+      text-align: center;
+      font-family: PT Sans;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      img {
+        padding-bottom: 20px;
+        width: 100%;
+      }
+    }
+    .box_item_wave {
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
 
 @keyframes wave2 {
@@ -175,4 +205,3 @@
     background-position-x: -100%;
   }
 }
-

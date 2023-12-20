@@ -85,6 +85,52 @@
       }
     }
 
+    .mobile_promotion{
+      display: none;
+      padding-top: 50px;
+      .box_item {
+        max-width: 210px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation: rotate 1s linear;
+
+        .box_item_img {
+          max-width: 120px;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        h3 {
+          padding-top: 15px;
+          color: #222;
+          text-align: center;
+          font-family: Playfair Display;
+          font-size: 28px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 32.2px;
+          padding-bottom: 30px;
+        }
+        p {
+          color: #666;
+          text-align: center;
+          font-family: PT Sans;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          padding-bottom: 13px;
+        }
+        .underline {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
     .water {
       width: 100%;
       display: flex;
@@ -201,21 +247,12 @@
         align-items: center;
         flex-direction: column;
         .property2_img {
+          max-width: 300px;
+
           animation: animat 1.8s ease-in-out 0s infinite;
-        }
 
-        .simvol{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 20px;
-
-          .simvol1{
-            max-width: 120px;
-
-            img{
-              width: 100%;
-            }
+          img{
+            width: 100%;
           }
         }
 
@@ -272,4 +309,35 @@
   .promotion .container .water_property .property1 .proBox p {
     width: 250px;
   }
+}
+.swiper {
+  width: 90%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  width: 64px;
+  height: 64px;
+  border: none;
+  border-radius: 50px;
+  background: #f5a93f;
+  color: white;
+  padding: 16px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  position: absolute;
+  font-size: 32px;
+  margin: 16px !important;
 }

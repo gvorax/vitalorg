@@ -100,7 +100,7 @@ const Shop = ({ setModal }) => {
               </div>
               <h5>{item?.name}</h5>
 
-              {localStorage.getItem("language") == "uz" ||
+              {localStorage.getItem("language") == "uzb" ||
               localStorage.getItem("language") == null ? (
                 <p>{item?.description?.uzb}</p>
               ) : null}

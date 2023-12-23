@@ -616,6 +616,26 @@ html {
     margin-bottom: 10px;
   }
 
+  .shop .swiper-button-prev,
+  .shop .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    background: #f5a93f;
+    color: white;
+    padding: 16px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .shop .swiper-button-prev::after,
+  .shop .swiper-button-next::after {
+    position: absolute;
+    font-size: 16px;
+    margin: 16px !important;
+  }
+
   .modal .connect h2 {
     font-size: 24px;
   }
@@ -901,6 +921,7 @@ html {
 
   .shop {
     overflow: hidden;
+
   }
 
   .delivery .del_box .del_text {
@@ -977,5 +998,8 @@ html {
     position: absolute;
     font-size: 16px;
     margin: 16px !important;
+  }
+  .shop .swiper-slide img{
+    object-fit: contain;
   }
 }

@@ -40,7 +40,7 @@ const Main = ({ setModal, setModal1 }) => {
                 d="M2 6.00468C4.5 2.19205 8.5 -0.30784 12.5 5.19202C16.2352 10.3277 21.3333 7.69199 22.5 5.19199C24.3607 1.20471 30.5 1.20471 33 4.70485C36.6316 9.78926 40.5 8.7051 42 4.70484"
                 stroke="#E3E3E3"
                 strokeWidth="3"
-                stroke-linecap="round"
+                strokeLinecap="round"
               />
             </svg>
             <p>{t("forComford")}</p>

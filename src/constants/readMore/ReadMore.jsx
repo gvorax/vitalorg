@@ -15,7 +15,7 @@ const ReadMoreButton = ({ paragraphs, class1 }) => {
     <div className="read-more-container">
       <div className={` text ${showFullText ? "show-full-text" : ""}`}>
         {paragraphs.map((paragraph, index) => (
-          <p key={index}>{paragraph}</p>
+          <p key={index} >{paragraph}</p>
         ))}
       </div>
       <div

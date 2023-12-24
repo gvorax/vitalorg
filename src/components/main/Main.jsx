@@ -18,8 +18,8 @@ const Main = ({ setModal, setModal1 }) => {
     <div className="main" id="home">
       <div className="bg_video">
         {/* video for background width fullscreen and it is located background */}
-        <video className="bg_video-content" autoplay muted loop>
-          <source src={video} type="video/mp4" />
+        <video className="bg_video-content-1" autoPlay muted loop>
+          <source src={video} type="video/mp4"/>
           Your browser does not support HTML5 video.
         </video>
 

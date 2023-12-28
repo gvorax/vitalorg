@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../navbar/Navbar";
 import video from "../../assets/bg.mp4";
+import video2 from "../../assets/bg_video2.mp4";
 import "./main.scss";
 import Button from "../../constants/Button";
 import About from "../about/About";
@@ -19,7 +20,11 @@ const Main = ({ setModal, setModal1 }) => {
       <div className="bg_video">
         {/* video for background width fullscreen and it is located background */}
         <video className="bg_video-content-1" autoPlay muted loop>
-          <source src={video} type="video/mp4"/>
+          <source src={video} type="video/mp4" />
+          Your browser does not support HTML5 video.
+        </video>
+        <video className="bg_video-content-2" autoPlay muted loop>
+          <source src={video2} type="video/mp4" />
           Your browser does not support HTML5 video.
         </video>
 

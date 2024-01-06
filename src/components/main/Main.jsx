@@ -11,6 +11,7 @@ import Delivery from "../delivery/Delivery";
 import Video from "../video/Video";
 import Contact from "../contact/Contact";
 import Footer from "../footer/Footer";
+import Rasm from "../../assets/bg_mobile.png"
 import { useTranslation } from "react-i18next";
 
 const Main = ({ setModal, setModal1 }) => {
@@ -23,10 +24,9 @@ const Main = ({ setModal, setModal1 }) => {
           <source src={video} type="video/mp4" />
           Your browser does not support HTML5 video.
         </video>
-        <video className="bg_video-content-2" autoPlay muted loop>
-          <source src={video2} type="video/mp4" />
-          Your browser does not support HTML5 video.
-        </video>
+        <div className="bg_video-content-2">
+          {/* <img src={Rasm} alt="" /> */}
+        </div>
 
         
       </div>

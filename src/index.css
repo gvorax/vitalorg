@@ -108,7 +108,7 @@ html {
     font-size: 64px;
   }
   .button {
-    padding: 10px 20px;
+    padding: 28px 20px;
     font-size: 18px;
   }
 
@@ -786,7 +786,7 @@ html {
     max-width: 1030px;
   }
   .button span {
-    font-size: 14px;
+    font-size: 18px !important;
   }
 
   [data-aos^="fade"][data-aos^="fade"].aos-animate {
@@ -801,7 +801,7 @@ html {
   }
 
   .main .main_content h1 {
-    font-size: 50px !important;
+    font-size: 45px !important;
     width: 300px !important;
   }
   .main_content-text {

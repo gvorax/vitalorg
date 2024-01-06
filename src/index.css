@@ -582,7 +582,7 @@ html {
     right: -70px !important;
   }
   .about {
-    margin-top: 100px;
+    margin-top: 56px;
   }
   .shop .swiper-slide h5 {
     line-height: 50px;
@@ -1003,6 +1003,6 @@ html {
     object-fit: contain;
   }
   .main .main_content{
-    margin-top: 105px;
+    margin-top: 200px;
   }
 }

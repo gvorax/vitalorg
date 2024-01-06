@@ -1002,4 +1002,7 @@ html {
   .shop .swiper-slide img{
     object-fit: contain;
   }
+  .main .main_content{
+    margin-top: 105px;
+  }
 }

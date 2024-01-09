@@ -1,8 +1,12 @@
 import { t } from "i18next";
 import React from "react";
+import Telegram from "../../assets/telegram.png";
+import Facebook from "../../assets/facebook.png";
 import "./contact.scss";
+import { useState } from "react";
 
 const Contact = () => {
+  const [shows, setShows] = useState(false);
   return (
     <div className="contact" id="contact">
       <h2 data-aos="fade-up" data-aos-delay="0">
@@ -32,7 +36,7 @@ const Contact = () => {
               </div>
               <a> {t("locationHead")} </a>
             </div>
-            <div className="building_info">
+            <div className="building_info" style={{ alignItems: "start" }}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -47,7 +51,49 @@ const Contact = () => {
                   fill="black"
                 />
               </svg>
-              <a href="tel:+998998058080">+998 99 805-80-80</a>
+              <div className={`lessPhone ${shows ? "long" : null} `}>
+                <a href="tel:+998998058080">+998 99 805-80-80</a>
+                <a href="tel:+998998048080">+998 99 804-80-80</a>
+                <a href="tel:+998999048080">+998 99 904-80-80</a>
+                <a href="tel:+998999148080">+998 99 914-80-80</a>
+                <a href="tel:+998999038080">+998 99 903-80-80</a>
+                <a href="tel:+998702028080">+998 70 202-80-80</a>
+                <a href="tel:+998555010033">+998 55 501-00-33</a>
+              </div>
+              <div onClick={() => setShows(!shows)} className="morePhone">
+                {shows ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18"
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                    // width={18}
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+                    />
+                  </svg>
+                )}
+              </div>
             </div>
             <div className="building_info">
               <svg
@@ -64,6 +110,14 @@ const Contact = () => {
               </svg>
               <a href="https://instagram.com/vital.uzb">vital.uzb</a>
             </div>
+            <div className="building_info">
+              <img src={Telegram} alt="" />
+              <a href="https://t.me/Vitaluzbekistan">VitalUzbekistan</a>
+            </div>
+            <div className="building_info">
+              <img src={Facebook} alt="" />
+              <a href="https://www.facebook.com/Vital.uzb/">Vital</a>
+            </div>
           </div>
           <div className="days">
             <h3>
@@ -73,7 +127,7 @@ const Contact = () => {
             <div className="time">
               <p>
                 {" "}
-                <span> {t("monday")}  </span> 9:00-18:00{" "}
+                <span> {t("monday")} </span> 9:00-18:00{" "}
               </p>
               <p>
                 {" "}

@@ -82,7 +82,7 @@ const Footer = ({ setModal }) => {
           </ul>
         </div>
         <div className="links">
-          <a href="#">
+          <a href="https://t.me/Vitaluzbekistan">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="26"
@@ -104,7 +104,7 @@ const Footer = ({ setModal }) => {
               />
             </svg>
           </a>
-          <a href="#">
+          <a href="https://www.facebook.com/Vital.uzb/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -120,7 +120,7 @@ const Footer = ({ setModal }) => {
               />
             </svg>
           </a>
-          <a href="#">
+          <a href="https://instagram.com/vital.uzb">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

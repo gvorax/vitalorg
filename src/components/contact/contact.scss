@@ -58,6 +58,11 @@
             background: #37a0d1;
           }
         }
+        .social-links{
+          text-decoration: none;
+          color: #222;
+          font-family: PT Sans;
+        }
         .building_info {
           display: flex;
           align-items: center;
@@ -157,7 +162,7 @@
 
     .info_map{
         width: 700px;
-        height: 700px;
+        
 
         iframe{
             width: 100%;

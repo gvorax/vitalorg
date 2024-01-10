@@ -62,11 +62,24 @@ html {
   .shop .simvol .box_item_wave {
     height: 225px;
   }
+  
+  .text {
+    max-height: 125px;
+  }
   .show-full-text {
     max-height: 1000px; /* Adjust to a large enough value */
   }
-  .text {
+  .video_text .text {
     max-height: 120px;
+  }
+  .video_text .show-full-text {
+    max-height: 1000px; /* Adjust to a large enough value */
+  }
+  .promotion_box .text{
+    max-height: 95px;
+  }
+  .promotion_box .show-full-text{
+    max-height: 1000px;
   }
   .navbar .navbar_logo .logo_box {
     max-width: 130px;
@@ -236,6 +249,18 @@ html {
   .show-full-text {
     max-height: 1000px; /* Adjust to a large enough value */
   }
+  /* .video_text .text {
+    max-height: 120px;
+  }
+  .video_text .show-full-text {
+    max-height: 1000px; 
+  } */
+  .promotion_box .text{
+    max-height: 107px;
+  }
+  .promotion_box .show-full-text{
+    max-height: 1000px;
+  }
   .about p {
     max-width: 800px;
   }
@@ -268,7 +293,7 @@ html {
     height: 225px;
   }
   .show-full-text {
-    max-height: 1000px; /* Adjust to a large enough value */
+    max-height: 1024px; /* Adjust to a large enough value */
   }
   .iframe-video {
     height: 300px !important;
@@ -381,7 +406,7 @@ html {
     max-height: 108px;
   }
   .show-full-text {
-    max-height: 1000px; /* Adjust to a large enough value */
+    max-height: 1350px; /* Adjust to a large enough value */
   }
   .block {
     display: none;
@@ -563,10 +588,10 @@ html {
     text-align: center;
   }
   .text {
-    max-height: 112px;
+    max-height: 117px;
   }
   .show-full-text {
-    max-height: 1000px; /* Adjust to a large enough value */
+    max-height: 1550px; /* Adjust to a large enough value */
   }
   .footer .top_button {
     width: 20px;

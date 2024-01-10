@@ -39,7 +39,6 @@ const About = () => {
       <p data-aos="fade-up">
         <ReadMoreButton paragraphs={paragraphs} />
       </p>
-      
     </div>
   );
 };

@@ -276,7 +276,7 @@ const Promotion = () => {
             </div>
             <div className="proBox" data-aos="fade-left" data-aos-delay="800">
               <h3>{t("gidrogen")}</h3>
-              {/* <h4>7-12 {t("g")}</h4> */}
+              <h4>7-12 {t("g")}</h4>
               <p>
                 {" "}
                 <span></span> {t("gidrogenText")}

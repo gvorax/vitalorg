@@ -52,6 +52,8 @@ i18n.use(initReactI18next).init({
         composition: `Suvning tarkibi`,
         motive: `Mijozlarning hayoti haqida o'ylaymiz shuning uchun biz suvga xlor
         qo‘shmaymiz, chunki xlor sog'lig'imizga jiddiy zarar yetkazadi.`,
+        gidrogen:"Gidrokarbanat",
+        gidrogenText:"Gidrokarbanat, suv barqarorligi uchun zarur. Bufer vazifasini bajaradi, pH darajasini saqlaydi va suv sifatini saqlaydi.",
         sulfat: "Sulfat",
         g: "mg/L",
         sulfatText: `Sulfat hujayralardagi eng muhim
@@ -151,6 +153,8 @@ i18n.use(initReactI18next).init({
         composition: `Состав воды`,
         motive: `Мы думаем о жизни наших клиентов, поэтому хлорируем воду
         мы его не добавляем, потому что хлор серьезно вредит нашему здоровью.`,
+        gidrogen:"Гидрокарбанат",
+        gidrogenText:"Гидрокарбанат, важный элемент для стабильности воды. Действует как буфер, поддерживает уровень pH и обеспечивает качество воды.",
         sulfat: "Сульфат",
         g: "мг/л",
         sulfatText: `Сульфат является самым важным в клетках
@@ -251,6 +255,9 @@ i18n.use(initReactI18next).init({
         composition: `The composition of water`,
         motive: `We think about the lives of our customers, that's why we chlorinate the water
         we do not add it, because chlorine seriously harms our health.`,
+        gidrogen:"Gidrocarbanat",
+        gidrogenText:`
+        Gidrocarbanat, essential for water stability. Acts as a buffer, maintaining pH levels and safeguarding water quality.`,
         sulfat: "Sulfate",
         g: "mg/L",
         sulfatText: `Sulfate is the most important in cells

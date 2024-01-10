@@ -275,11 +275,11 @@ const Promotion = () => {
               </div>
             </div>
             <div className="proBox" data-aos="fade-left" data-aos-delay="800">
-              <h3>{t("sulfat")}</h3>
-              <h4>7-12 {t("g")}</h4>
+              <h3>{t("gidrogen")}</h3>
+              {/* <h4>7-12 {t("g")}</h4> */}
               <p>
                 {" "}
-                <span></span> {t("sulfatText")}
+                <span></span> {t("gidrogenText")}
               </p>
               <div className="pro_img">
                 <img src={drop} alt="" />

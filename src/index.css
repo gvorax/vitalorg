@@ -1008,4 +1008,8 @@ html {
   .contact .contact_info .info_day .building,.contact .contact_info .info_day .days{
     padding: 20px 26px;
   }
+  .contact .contact_info .info_map {
+    width: 100%;
+    height: 300px;
+  }
 }

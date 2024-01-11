@@ -105,6 +105,10 @@ i18n.use(initReactI18next).init({
         friday: "Juma",
         saturday: "Shanba",
         sunday: "Yakshanba",
+        health:"So'glik uchun xavfsiz",
+        qual:"Sifatiga javob beramiz",
+        deliv:"O'zbekiston bo'yicha bepul yetkazib beramiz",
+        exit:"Yopiq"
       },
     },
     rus: {
@@ -205,7 +209,11 @@ i18n.use(initReactI18next).init({
         thursday: "Четверг",
         friday: "Пятница",
         saturday: "Суббота",
-        sunday: "Yakshanba",
+        sunday: "Воскресенье",
+        health:"Безопасно для кожи",
+        qual:"Мы отвечаем за качество",
+        deliv:"Доставляем бесплатно по всему Узбекистану.",
+        exit:"Закрыто"
       },
     },
     eng: {
@@ -309,6 +317,10 @@ i18n.use(initReactI18next).init({
         friday: "Friday",
         saturday: "Saturday",
         sunday: "Sunday",
+        health:"Safe for the skin",
+        qual:"We answer the quality",
+        deliv:"We deliver free of charge throughout Uzbekistan",
+        exit:"Close"
       },
     },
   },

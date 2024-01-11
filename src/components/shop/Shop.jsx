@@ -147,7 +147,7 @@ const Shop = ({ setModal }) => {
       <div className="simvol">
         <div className="simvol1">
           <img src={Simvol1} alt="" />
-          <p>So'glik uchun xavfsiz</p>
+          <p>{t("health")}</p>
         </div>
         <div className="box_item_wave">
           <svg
@@ -166,7 +166,7 @@ const Shop = ({ setModal }) => {
         </div>
         <div className="simvol1">
           <img src={Simvol2} alt="" />
-          <p>Sifatiga javob beramiz</p>
+          <p>{t("qual")}</p>
         </div>
         <div className="box_item_wave">
             <svg
@@ -185,7 +185,7 @@ const Shop = ({ setModal }) => {
           </div>
         <div className="simvol1">
           <img src={Simvol3} alt="" />
-          <p>O'zbekiston bo'yicha bepul yetkazib beramiz</p>
+          <p>{t("deliv")}</p>
         </div>
       </div>
     </div>

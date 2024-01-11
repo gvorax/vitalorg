@@ -158,7 +158,7 @@ const Contact = () => {
               </p>
               <p>
                 {" "}
-                <span> {t("sunday")}</span> Yopiq{" "}
+                <span> {t("sunday")}</span> {t("exit")}
               </p>
             </div>
           </div>

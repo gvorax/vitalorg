@@ -7,6 +7,7 @@ import Main from "./components/main/Main";
 import CertificateModal from "./constants/Modal/CertificateModal";
 import Modal from "./constants/Modal/Modal";
 import { ToastContainer } from "react-toastify";
+import GoogleAnalize from './components/GoogleAnalize';
 AOS.init();
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       {modal && <Modal setModal={setModal} />}
       {modal1 && <CertificateModal setModal={setModal1} />}
       <ToastContainer autoClose={3000} />
+      <GoogleAnalize />
     </div>
   );
 }

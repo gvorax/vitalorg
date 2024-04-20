@@ -51,7 +51,7 @@ const ProductModal = ({ setModal, setInfo }) => {
             </div>
             <div className="product_desc">
               <h2>{data?.name}</h2>
-              {localStorage.getItem("language") == "uz" ||
+              {localStorage.getItem("language") == "uzb" ||
               localStorage.getItem("language") == null ? (
                 <p>{data?.description?.uzb}</p>
               ) : null}
